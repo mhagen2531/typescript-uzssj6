@@ -12,10 +12,10 @@ function greeter(person: Person) {
 
 // let user = "Jane User";
 // let user = [0, 1, 2];
-let user = { firstName: "Jane", lastName: "Doe" };
+let user = { firstName: "John", lastName: "Doe" };
 
-document.body.textContent = greeter(user);
+// document.body.textContent = greeter(user);
 
 // Write TypeScript code!
-// const appDiv: HTMLElement = document.getElementById('app');
-// appDiv.innerHTML = `<h1>Hello world!</h1>`;
+const appDiv: HTMLElement = document.getElementById('app');
+appDiv.innerHTML = greeter(user);
